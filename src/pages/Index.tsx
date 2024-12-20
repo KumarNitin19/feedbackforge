@@ -9,7 +9,7 @@ const Index = () => {
   const analyzeReview = async (text: string) => {
     setIsLoading(true);
     console.log("Analyzing review:", text);
-    
+
     try {
       // Simulated API call to OpenAI
       // This should be replaced with actual OpenAI API integration
@@ -43,7 +43,7 @@ const Index = () => {
       };
 
       // Simulate API delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      await new Promise((resolve) => setTimeout(resolve, 1500));
       setAnalysisData(mockData);
     } catch (error) {
       console.error("Error analyzing review:", error);
