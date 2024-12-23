@@ -24,7 +24,7 @@ export function generateReportFromPrompt(prompt: string): object {
         if (leadershipKeywords.some(keyword => prompt.includes(keyword))) {
             return reports.report3; // Report 5: Needs Improvement in Leadership
         } else if (strategicPlanningKeywords.some(keyword => prompt.includes(keyword))) {
-            return reports.report2; // Report 1: Strong Performance with Suggestions for Improvement
+            return reports.report4; // Report 1: Strong Performance with Suggestions for Improvement
         } else {
             return reports.report5; // Report 5: Needs Improvement in Several Areas
         }
